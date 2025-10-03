@@ -1,14 +1,525 @@
-<!doctype html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/jpg" href="/logo-lightArtboard 1.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Malin Dhamsara | Full-stack Developer</title>
-    <script type="module" crossorigin src="/assets/index-VCZd3EQ7.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-x-G6VxPF.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Malin</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap"
+    rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (window.location.hash) {
+        history.replaceState(null, null, ' ');
+        window.scrollTo(0, 0);
+      }
+    });
+  </script>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+  <h1 class="sitename">Malin</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <div class="header-social-links">
+        <a href="https://www.facebook.com/malindhamsara" class="facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/malindhamsara" class="instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+        <a href="https://github.com/malinrruwan" class="github" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/malindhamsara" class="linkedin" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+<section id="hero" class="hero section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row align-items-center content">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+  <h2>Creative and Enthusiastic Web Developer</h2>
+  <p class="lead">Enthusiastic and dynamic individual with a passion for computers and web development. Skilled in creating websites and solving technical problems calmly and efficiently. Adaptable and resourceful, I thrive in challenging situations and consistently deliver results without stress. Eager to contribute my expertise and positive attitude to any team.</p>
+        <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+          <a href="#portfolio" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Let's Connect</a>
+        </div>
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+          <div class="stat-item">
+            <span class="stat-number">1+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-image">
+          <div style="position: relative; max-width: 450px; margin: 0 auto; padding: 20px;">
+            <img src="assets/img/profile/1.jpg" 
+                 alt="Portfolio Hero Image" 
+                 data-aos="zoom-out" 
+                 data-aos-delay="300"
+                 style="width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 20px; position: relative; z-index: 2; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15); display: block;">
+            
+            <div style="position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; border: 3px solid #e87532; border-radius: 25px; z-index: 1;"></div>
+            
+            <div style="position: absolute; top: 0; left: 0; width: 40px; height: 40px; border-top: 4px solid #e87532; border-left: 4px solid #e87532; border-top-left-radius: 8px; z-index: 3;"></div>
+            
+            <div style="position: absolute; top: 0; right: 0; width: 40px; height: 40px; border-top: 4px solid #e87532; border-right: 4px solid #e87532; border-top-right-radius: 8px; z-index: 3;"></div>
+            
+            <div style="position: absolute; bottom: 0; left: 0; width: 40px; height: 40px; border-bottom: 4px solid #e87532; border-left: 4px solid #e87532; border-bottom-left-radius: 8px; z-index: 3;"></div>
+            
+            <div style="position: absolute; bottom: 0; right: 0; width: 40px; height: 40px; border-bottom: 4px solid #e87532; border-right: 4px solid #e87532; border-bottom-right-radius: 8px; z-index: 3;"></div>
+          </div>
+          <div class="shape-1"></div>
+          <div class="shape-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor"
+              stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Creative and enthusiastic web developer with a passion for computers and web development. Skilled in creating websites and solving technical problems calmly and efficiently. Adaptable and resourceful, I thrive in challenging situations and consistently deliver results without stress.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-image">
+              <img src="assets/img/profile/2.jpeg" alt="Profile Image" class="img-fluid rounded-4"
+                style="max-width: 80%; height: auto; display: block; margin: 0 auto;">
+            </div>
+          </div>
+          </style>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <span class="subtitle">About Me</span>
+              <h2>Malin Dhamsara</h2>
+              <p class="lead mb-4">Creative and enthusiastic web developer. Skilled in MERN Stack, Springboot, NextJS, PHP, MySQL, PostgreSQL, Docker, Photoshop, Illustrator, Figma.</p>
+              <p class="mb-4">Enthusiastic and dynamic individual with a passion for computers and web development. Adaptable and resourceful, I thrive in challenging situations and consistently deliver results without stress.</p>
+              <div class="personal-info">
+                <div class="row g-4">
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Name</span>
+                      <span class="value">Malin Dhamsara</span>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Phone</span>
+                      <span class="value">+94 71 8855401</span>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Email</span>
+                      <span class="value">maliniqrub@gmail.com</span>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Address</span>
+                      <span class="value">174/6/5/2, Ekamuthu Mawatha, Halpita, Polgasowita</span>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Languages</span>
+                      <span class="value">English, Sinhala</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="signature mt-4">
+                <div class="signature-info">
+                  <h4>Malin Dhamsara</h4>
+                  <p>Creative and enthusiastic web developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+    <!-- Education Section -->
+<section id="education" class="education section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Education</h2>
+    <div class="title-shape">
+      <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+      </svg>
+    </div>
+    <p>Academic background and certifications in technology and communication.</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row g-4">
+
+      <!-- School Education -->
+      <div class="col-lg-6">
+        <div class="edu-card">
+          <div class="edu-header">
+            <i class="bi bi-mortarboard-fill"></i>
+            <h3>School Education</h3>
+          </div>
+          <div class="edu-body">
+            <div class="edu-item">
+              <h4>G.C.E. Advanced Level</h4>
+              <p class="institution">Ananda College, Colombo, Sri Lanka</p>
+              <div class="badges">
+                <span class="badge badge-primary">Z Score: 2.5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- University Education -->
+      <div class="col-lg-6">
+        <div class="edu-card">
+          <div class="edu-header">
+            <i class="bi bi-building"></i>
+            <h3>University Education</h3>
+          </div>
+          <div class="edu-body">
+            <div class="edu-item">
+              <h4>Bachelor in Information and Communication Technology</h4>
+              <p class="institution">University of Sri Jayewardenepura</p>
+              <div class="badges">
+                <span class="badge badge-success">GPA: 3.7</span>
+                <span class="badge badge-secondary">March 2024 - Present</span>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="skills" class="skills section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="title-shape">
+      <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+      </svg>
+    </div>
+    <p>Technologies and tools I work with:</p>
+  </div>
+  
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row g-4">
+      
+      <!-- Programming Languages -->
+      <div class="col-md-6 col-lg-4">
+        <div class="skill-card">
+          <div class="skill-header">
+            <i class="bi bi-code-slash"></i>
+            <h4>Web Development</h4>
+          </div>
+          <div class="skill-body">
+            <div class="skill-items">
+              <span class="skill-item">MERN Stack</span>
+              <span class="skill-item">Springboot</span>
+              <span class="skill-item">NextJS</span>
+              <span class="skill-item">PHP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Frameworks -->
+      <div class="col-md-6 col-lg-4">
+        <div class="skill-card">
+          <div class="skill-header">
+            <i class="bi bi-layers"></i>
+            <h4>SQL Databases</h4>
+          </div>
+          <div class="skill-body">
+            <div class="skill-items">
+              <span class="skill-item">MySQL</span>
+              <span class="skill-item">PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- SQL Databases -->
+      <div class="col-md-6 col-lg-4">
+        <div class="skill-card">
+          <div class="skill-header">
+            <i class="bi bi-database"></i>
+            <h4>Containerization</h4>
+          </div>
+          <div class="skill-body">
+            <div class="skill-items">
+              <span class="skill-item">Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Tools -->
+      <div class="col-12">
+        <div class="skill-card tools-card">
+          <div class="skill-header">
+            <i class="bi bi-tools"></i>
+            <h4>Graphic Design</h4>
+          </div>
+          <div class="skill-body">
+            <div class="skill-items tools-grid">
+              <span class="skill-item">Photoshop</span>
+              <span class="skill-item">Illustrator</span>
+              <span class="skill-item">Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+    <!-- Experience Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+  <h2 id="experience">Experience</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor"
+              stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>My professional experience and journey as a software engineer intern.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-12">
+            <div class="resume-wrapper">
+              <div class="resume-block" data-aos="fade-up">
+                <h2>Experience & Volunteering</h2>
+                <div class="timeline">
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">Gavel Club</h4>
+                      <span class="period">Co-Media Director, University of Sri Jayewardenapura (Sep 2025 - Present)</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Media & Design</h3>
+                      <p class="description">Responsible for media and design activities, including event coverage and digital content creation.</p>
+                    </div>
+                  </div>
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">ICTS Envision - Events Crew</h4>
+                      <span class="period">Computer Society Chapter - IEEE Web development</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Web Developer</h3>
+                      <p class="description">Developed and maintained web solutions for university events. <a href="https://www.beautyof.cloud/" target="_blank">Beauty of Cloud</a></p>
+                    </div>
+                  </div>
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-left">
+                      <h4 class="company">Road to Legacy</h4>
+                      <span class="period">Technical crew member, University of Sri Jayewardenapura</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Technical Crew</h3>
+                      <p class="description">Supported technical operations for university events.</p>
+                    </div>
+                  </div>
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="timeline-left">
+                      <h4 class="company">Gavel club Speech Master 2025</h4>
+                      <span class="period">Design crew member, University of Sri Jayewardenapura</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Design Crew</h3>
+                      <p class="description">Contributed to design and creative aspects of university speech events.</p>
+                    </div>
+                  </div>
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="timeline-left">
+                      <h4 class="company">IEEE Student Branch Delegate committee</h4>
+                      <span class="period">Crew head, University of Sri Jayewardenapura</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Crew Head</h3>
+                      <p class="description">Led the delegate committee for IEEE student branch activities.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section><!-- /Experience Section -->
+    <!-- Projects Section -->
+
+    
+<section id="projects" class="projects section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="title-shape">
+      <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+      </svg>
+    </div>
+    <p>Key projects I have developed or contributed to:</p>
+  </div>
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-header">
+            <h4>Beauty of Cloud Website</h4>
+          </div>
+          <div class="project-body">
+            <div class="project-detail">
+              <span class="detail-label">Technologies:</span>
+              <span class="detail-value">Next.js, React</span>
+            </div>
+            <div class="project-detail">
+              <span class="detail-label">Description:</span>
+              <span class="detail-value">Designed and launched a captivating landing page for the "Beauty of Cloud" project, initiated by the Computer Society Chapter - IEEE of the University of Sri Jayewardenapura. Delivered an elegant, fast-loading, and responsive user experience.</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://www.beautyof.cloud/" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-header">
+            <h4>Parisflex</h4>
+          </div>
+          <div class="project-body">
+            <div class="project-detail">
+              <span class="detail-label">Technologies:</span>
+              <span class="detail-value">Web Development</span>
+            </div>
+            <div class="project-detail">
+              <span class="detail-label">Description:</span>
+              <span class="detail-value">Developed a comprehensive solution for taxi booking in France.</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://parisflextransfer.com/" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="project-card">
+          <div class="project-header">
+            <h4>TeleXray</h4>
+          </div>
+          <div class="project-body">
+            <div class="project-detail">
+              <span class="detail-label">Technologies:</span>
+              <span class="detail-value">Python, Telegram Bot Framework</span>
+            </div>
+            <div class="project-detail">
+              <span class="detail-label">Description:</span>
+              <span class="detail-value">Telegram bot for managing Xray-core made with telegraph, an awesome Telegram bot framework.</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/MalinrRuwan/TeleXray" target="_blank" class="btn btn-sm btn-outline-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  </main><!-- End #main -->
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
