@@ -26,14 +26,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <script>
-    window.addEventListener('DOMContentLoaded', function () {
-      if (window.location.hash) {
-        history.replaceState(null, null, ' ');
-        window.scrollTo(0, 0);
-      }
-    });
-  </script>
 </head>
 
 <body class="index-page">
@@ -46,6 +38,13 @@
   <h1 class="sitename">Malin</h1>
       </a>
 
+      <!-- CSS-only mobile nav toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle d-xl-none" aria-label="Toggle navigation" />
+      <label for="nav-toggle" class="mobile-nav-toggle d-xl-none" aria-hidden="true">
+        <i class="bi bi-list icon-open"></i>
+        <i class="bi bi-x icon-close"></i>
+      </label>
+
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
@@ -55,8 +54,6 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
         </ul>
-
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
       <div class="header-social-links">
         <a href="https://www.facebook.com/malindhamsara" class="facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
@@ -67,7 +64,7 @@
 
     </div>
   </header>
-
+  <main id="main">
 <section id="hero" class="hero section">
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="row align-items-center content">
@@ -139,7 +136,6 @@
                 style="max-width: 80%; height: auto; display: block; margin: 0 auto;">
             </div>
           </div>
-          </style>
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="about-content">
               <span class="subtitle">About Me</span>
@@ -508,17 +504,6 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
 
 </body>
 

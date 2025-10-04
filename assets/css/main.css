@@ -272,6 +272,24 @@ h6 {
     transition: color 0.3s;
   }
 
+  /* CSS-only toggle: hide checkbox, switch icons */
+  .nav-toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .mobile-nav-toggle .icon-close {
+    display: none;
+  }
+
+  .nav-toggle:checked + .mobile-nav-toggle .icon-open {
+    display: none;
+  }
+  .nav-toggle:checked + .mobile-nav-toggle .icon-close {
+    display: inline-block;
+  }
+
   .navmenu {
     padding: 0;
     z-index: 9997;
@@ -386,6 +404,18 @@ h6 {
   .mobile-nav-active .navmenu > ul {
     display: block;
   }
+
+  /* Make nav act as overlay when open using the checkbox state */
+  .nav-toggle:checked ~ #navmenu {
+    position: fixed;
+    overflow: hidden;
+    inset: 0;
+    background: rgba(33, 37, 41, 0.8);
+    transition: 0.3s;
+  }
+  .nav-toggle:checked ~ #navmenu > ul {
+    display: block;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -467,12 +497,78 @@ h6 {
   bottom: 15px;
 }
 
+/* Always show scroll-top without JS */
+.scroll-top {
+  visibility: visible !important;
+  opacity: 1 !important;
+  bottom: 15px !important;
+}
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# No-JS: simple AOS-like load animations
+--------------------------------------------------------------*/
+[data-aos] {
+  opacity: 0;
+}
+
+[data-aos="fade-up"] {
+  transform: translateY(20px);
+  animation: aosFadeUp 0.8s ease-out forwards;
+}
+
+[data-aos="zoom-out"] {
+  transform: scale(1.05);
+  animation: aosZoomOut 0.6s ease-out forwards;
+}
+
+/* Delays used in markup */
+[data-aos-delay="100"] {
+  animation-delay: 0.1s;
+}
+[data-aos-delay="200"] {
+  animation-delay: 0.2s;
+}
+[data-aos-delay="300"] {
+  animation-delay: 0.3s;
+}
+[data-aos-delay="400"] {
+  animation-delay: 0.4s;
+}
+[data-aos-delay="500"] {
+  animation-delay: 0.5s;
+}
+[data-aos-delay="600"] {
+  animation-delay: 0.6s;
+}
+
+@keyframes aosFadeUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes aosZoomOut {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    opacity: 1 !important;
+    animation: none !important;
+    transform: none !important;
   }
 }
 
@@ -2263,7 +2359,4 @@ section,
   .tools-grid {
     grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
   }
-}
-
-.starter-section {
 }
